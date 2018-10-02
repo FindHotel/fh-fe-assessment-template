@@ -1,8 +1,15 @@
-import React, { Component } from 'react'
+// @flow
 
-class App extends Component {
+import React, { Component } from 'react'
+import styled from 'react-emotion'
+
+const RootStyledElement = styled('div')`
+  font-size: 1.2rem;
+`
+
+class App extends Component<{}> {
   render () {
-    return <div className="App">Your code here</div>
+    return <RootStyledElement>Your code here</RootStyledElement>
   }
 }
 
